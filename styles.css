@@ -1,0 +1,153 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1.6rem;
+  background-color: rgba(120, 121, 122, 0.391);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./images/pexels-pixabay-53621.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  line-height: 1.5;
+}
+
+.main-wrap {
+  width: 60%;
+  padding: 4rem 2rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.numbers-arithmetic {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.set-operations {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="number"] {
+  padding: 0.5rem 0;
+}
+
+input[type="number"],
+textarea,
+select {
+  margin: 1rem auto;
+  width: 60%;
+}
+
+#operation,
+#setOperations {
+    padding: .5rem;
+    text-align: center;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5rem;
+  background-color: rgb(7, 123, 239);
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+#resultSection,
+#setsResultSection {
+  text-align: center;
+  margin-top: 2rem;
+  width: 80%;
+  font-weight: bold;
+}
+
+#explanationSection,
+#setsExplanationSection {
+  width: 80%;
+  text-align: center;
+  font-style: italic;
+  color: #666;
+}
+
+.set-operations {
+  margin-top: 3rem;
+}
+
+@media (max-width: 575px) {
+  body {
+    font-size: 1.2rem;
+  }
+
+  .main-wrap {
+    width: 90%;
+    padding: 4rem 2rem;
+    margin: 2rem 0;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  #setsExplanationSection {
+    margin-bottom: 2rem;
+  }
+
+  input[type="number"],
+  textarea,
+  select {
+    width: 90%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .main-wrap {
+    width: 70%;
+    padding: 4rem 2rem;
+    min-height: 60vh;
+  }
+
+  input[type="number"],
+  textarea,
+  select {
+    width: 90%;
+  }
+}

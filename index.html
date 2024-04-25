@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Theory Playground</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="main-wrap">
+      <div class="header-title">
+        <h1>Number Theory Playground</h1>
+      </div>
+      <div class="numbers-arithmetic">
+        <input type="number" id="num1" placeholder="Enter first number" />
+        <input type="number" id="num2" placeholder="Enter second number" />
+        <select id="operation">
+          <option value="gcd">Greatest Common Divisor</option>
+          <option value="lcm">Least Common Multiple</option>
+          <option value="pns">Prime Numbers</option>
+          <option value="mod">Modular Arithmetic</option>
+        </select>
+        <button onclick="calculate()">Calculate</button>
+        <div class="result-details">
+          <div id="resultSection">
+            <!-- Results will be displayed here -->
+          </div>
+          <div id="explanationSection">
+            <!-- Explanation will be displayed here -->
+          </div>
+        </div>
+      </div>
+
+      <div class="set-operations">
+        <h2>Set Operations</h2>
+        <textarea
+          id="setA"
+          placeholder="Enter elements of set A (comma-separated)"
+        ></textarea>
+        <textarea
+          id="setB"
+          placeholder="Enter elements of set B (comma-separated)"
+        ></textarea>
+        <select id="setOperations">
+          <option value="union">Union</option>
+          <option value="intersection">Intersection</option>
+          <option value="difference">Difference</option>
+        </select>
+        <button onclick="calculateSets()">Calculate</button>
+        <div class="result-details">
+          <div id="setsResultSection">
+            <!-- Results will be displayed here -->
+          </div>
+          <div id="setsExplanationSection">
+            <!-- Explanation will be displayed here -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
